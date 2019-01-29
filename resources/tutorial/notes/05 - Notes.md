@@ -13,6 +13,32 @@ This also means that your notes aren't locked into any proprietary format.
 
 Notes can have some metadata: if they are favorited or not, which tags they have, which attachments they have, etc. These metadata are written as Markdown front matter. This is taken care of for you.
 
+## Syntax Plugins
+
+Some syntax plugins for providing you [KaTeX](https://katex.org) and [mermaid](https://github.com/knsv/mermaid) support are built-in, check out this note's source.
+
+#### KaTeX
+
+Wrap a formula in `$$` to display it as a block:
+
+$$e^{iπ} + 1 = 0$$
+
+Wrap it in `$` to display it inline: $e = mc^2$.
+
+You can also use [AsciiMath](http://asciimath.org): $sum_(i=1)^n i^3=((n(n+1))/2)^2$.
+
+> **Note**: In order to minimize conflicts there mustn't be spaces at the beginning and end of a formula, and the ending `$` character musn't be followed by a digit.
+
+#### mermaid
+
+```mermaid
+graph LR
+  Install --> Tutorial[Read the tutorial]
+  Tutorial --> Star
+  Tutorial --> Share
+  Tutorial -.-> mermaid[Realize how cool mermaid is]
+```
+
 ## Attachments
 
 Notes can have attachments, because sooner or later you'll want to save a file in a note, be it a boarding pass for your next trip or something else.
